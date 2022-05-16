@@ -46,7 +46,7 @@ export default class RestaurantsDAO {
 
             return { restaurantsList, totalNumRestaurants }
         } catch (e) {
-            console.error(`Unable to convert cursor to array or problem counting documents, ${e}`)
+            console.error('Unable to convert cursor to array or problem counting documents, ' + e)
             return { restaurantsList: [], totalNumRestaurants: 0 }
         }
     }
